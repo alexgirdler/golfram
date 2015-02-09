@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='1'
+    datatypes=''
+    timedout='Traveling,Data'
+    timedoutpods='Input interpretation'
+    timing='5.818'
+    parsetiming='0.716'
+    parsetimedout='false'
+    recalculate='http://www4c.wolframalpha.com/api/v2/recalc.jsp?id=MSPa1121e9dg9i82b00003e000035ifd0hfb4487ce5&amp;s=44'
+    id='MSPa1131e9dg9i82b00003e000033e7837abi0c4h5b'
+    host='http://www4c.wolframalpha.com'
+    server='44'
+    related='http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa1141e9dg9i82b00003e00005e74c162e7if588i&amp;s=44'
+    version='2.6'>
+ <pod title='Distance'
+     scanner='Traveling'
+     id='Distance'
+     position='200'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <plaintext>190.2 miles</plaintext>
+   <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP1151e9dg9i82b00003e00004d8i8a7a530bdd3c?MSPStoreType=image/gif&amp;s=44'
+       alt='190.2 miles'
+       title='190.2 miles'
+       width='71'
+       height='18' />
+  </subpod>
+  <states count='1'>
+   <state name='Show metric units'
+       input='Distance__Show metric units' />
+  </states>
+ </pod>
+ <assumptions count='2'>
+  <assumption type='Clash'
+      word='newyork'
+      template='Assuming &quot;${word}&quot; is ${desc1}. Use as ${desc2} instead'
+      count='4'>
+   <value name='City'
+       desc='a city'
+       input='*C.newyork-_*City-' />
+   <value name='USState'
+       desc='a US state'
+       input='*C.newyork-_*USState-' />
+   <value name='MLBTeam'
+       desc='an MLB team'
+       input='*C.newyork-_*MLBTeam-' />
+   <value name='NBATeam'
+       desc='an NBA team'
+       input='*C.newyork-_*NBATeam-' />
+  </assumption>
+  <assumption type='SubCategory'
+      word='boston'
+      template='Assuming ${desc1}. Use ${desc2} instead'
+      count='7'>
+   <value name='{Boston, Massachusetts, UnitedStates}'
+       desc='Boston (Massachusetts, USA)'
+       input='*DPClash.CityE.boston-_**Boston.Massachusetts.UnitedStates--' />
+   <value name='{Boston, NewYork, UnitedStates}'
+       desc='Boston (New York, USA)'
+       input='*DPClash.CityE.boston-_**Boston.NewYork.UnitedStates--' />
+   <value name='{Boston, Lincolnshire, UnitedKingdom}'
+       desc='Boston (United Kingdom)'
+       input='*DPClash.CityE.boston-_**Boston.Lincolnshire.UnitedKingdom--' />
+   <value name='{Boston, Georgia, UnitedStates}'
+       desc='Boston (Georgia, USA)'
+       input='*DPClash.CityE.boston-_**Boston.Georgia.UnitedStates--' />
+   <value name='{Boston, Indiana, UnitedStates}'
+       desc='Boston (Indiana, USA)'
+       input='*DPClash.CityE.boston-_**Boston.Indiana.UnitedStates--' />
+   <value name='{Boston, Karakalpakstan, Uzbekistan}'
+       desc='Boston (Uzbekistan)'
+       input='*DPClash.CityE.boston-_**Boston.Karakalpakstan.Uzbekistan--' />
+   <value name='{Boston, DavaoOriental, Philippines}'
+       desc='Boston (Philippines)'
+       input='*DPClash.CityE.boston-_**Boston.DavaoOriental.Philippines--' />
+  </assumption>
+ </assumptions>
+ <sources count='1'>
+  <source url='http://www.wolframalpha.com/sources/CityDataSourceInformationNotes.html'
+      text='City data' />
+ </sources>
+</queryresult>
