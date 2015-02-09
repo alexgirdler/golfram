@@ -14,8 +14,7 @@ import (
 )
 
 const (
-	libraryVersion = "0.1"
-	// Wolfram api url
+	libraryVersion = "0.2"
 )
 
 // Client that connects to the wolfram api
