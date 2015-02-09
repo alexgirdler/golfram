@@ -9,7 +9,7 @@ Simply Import "github.com/alexgirdler/golfram"
 c := golfram.NewClient("APP-KEY")
 result, err := c.NewQuery("plot sinx")
 if err != nil {
-  c.GetPlot(result, 0, nil)
+  c.GetPlot(result, 0, "")
 }
 ```
 
