@@ -14,8 +14,8 @@ import (
 )
 
 const (
-	libraryVersion    = "0.2"
-	wolframDefaultURL = "http://api.wolframalpha.com/v2/query"
+	libraryVersion string = "0.2"
+	DefaultURL     string = "http://api.wolframalpha.com/v2/query"
 )
 
 // Client that connects to the wolfram api
