@@ -14,7 +14,8 @@ import (
 )
 
 const (
-	libraryVersion = "0.2"
+	libraryVersion    = "0.2"
+	wolframDefaultURL = "http://api.wolframalpha.com/v2/query"
 )
 
 // Client that connects to the wolfram api
@@ -94,9 +95,6 @@ type Queryresult struct {
 // Returns pointer to client
 func NewClient(appID string, wolframURL string) *Client {
 	httpClient := http.DefaultClient
-	if wolframURL == "" {
-		wolframURL = "http://api.wolframalpha.com/v2/query"
-	}
 	c := &Client{client: httpClient, AppID: appID, WolframURL: wolframURL}
 	return c
 }
