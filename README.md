@@ -1,7 +1,7 @@
 # GOLFRAM
 A Wolfram Alpha API lib wrote in go.
 
-## Instalation
+## Installation
 Simply Import "github.com/alexgirdler/golfram"
 
 ## Example Usage
