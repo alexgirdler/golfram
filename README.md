@@ -6,7 +6,7 @@ Simply Import "github.com/alexgirdler/golfram"
 
 ## Example Usage
 ```go
-c := golfram.NewClient("APP-KEY")
+c := golfram.NewClient("APP-KEY", golfram.wolframDefaultURL)
 result, err := c.NewQuery("plot sinx")
 if err != nil {
   c.GetPlot(result, 0, "")
